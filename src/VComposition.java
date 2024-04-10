@@ -1,4 +1,4 @@
-/**
+/** 
  * The vertical composition of two text blocks.
  * 
  * @author Samuel A. Rebelsky
