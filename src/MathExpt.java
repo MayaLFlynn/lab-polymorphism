@@ -1,4 +1,7 @@
 import java.io.PrintWriter;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.lang.Double;
 
 /**
  * A few simple experiments with our utilities.
@@ -16,6 +19,11 @@ public class MathExpt {
       pen.println(root + "^2 = " + (root * root));
     } // for i
 
+    pen.println("The squareroot of 5.5 is: " + MathUtils.squareRoot((float)5.5));
+    pen.println("The squareroot of 5.5 is: " + MathUtils.squareRoot((double)5.5));
+    pen.println("The squareroot of 5 is: " + MathUtils.squareRoot(BigInteger.valueOf(5)));
+    pen.println("The squareroot of 4 is: " + MathUtils.squareRoot(BigDecimal.valueOf(4)));
+    pen.println("The squareroot of 4 is: " + MathUtils.squareRoot(Double.valueOf(4)));
     // We're done. Clean up.
     pen.close();
   } // main(String[])
